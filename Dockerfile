@@ -138,7 +138,7 @@ RUN touch enable-ssh.sh \
 # RUN yes | sudo pacman -Syu qemu libvirt dnsmasq virt-manager bridge-utils edk2-ovmf netctl libvirt-dbus --overwrite --noconfirm
 
 RUN yes | sudo pacman -Syu qemu libvirt dnsmasq virt-manager bridge-utils openresolv jack ebtables edk2-ovmf netctl libvirt-dbus --overwrite --noconfirm \
-    && yes | sudo pacman -Scc
+    && yes | sudo pacman -Sc
 
 # RUN sudo systemctl enable libvirtd.service
 # RUN sudo systemctl enable virtlogd.service
